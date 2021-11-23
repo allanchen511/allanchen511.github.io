@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'ubunturegular';
+    src: url(./fonts/webfontkit-20211122-134512/ubuntu-regular-webfont.woff2);
+}
+
+@keyframes fadeInAnimation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(5%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideUpFooter {
+    0% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+*{
+    font-family: ubunturegular, sans-serif;
+}
+
+body, header, footer, .button{
+    background-color: whitesmoke;
+}
+
+body{
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+    
+}
+
+body div{
+    padding-bottom: 16px;
+    animation: fadeInAnimation ease 0.75s, 0.75s ease-out 0s 1 slideUp;
+
+}
+
+
+header{
+
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    font-size: 18px; 
+    text-align: center;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+ul{
+    margin: 0px;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    width: 330px;
+    padding: 10px;
+    vertical-align: left;
+
+}
+
+a {text-decoration: none;}
+a:link {color: black;}
+a:visited {color: black;}
+div a:hover {text-decoration: underline;}
+footer a:hover {text-decoration: underline;}
+
+h1 {
+    vertical-align: left;
+    width: 400px;
+    margin: auto;
+    text-align: left;
+    font-weight: 800;
+}
+
+h2{
+    vertical-align: left;
+    width: 400px;
+    margin: auto;
+    text-align: left;
+    line-height: 120%;
+}
+
+
+
+p {
+    width: 400px;
+    text-align: left;
+    vertical-align: middle;
+    margin: auto;
+    line-height: 130%;
+    font-size: 105%;
+    color:rgb(65, 65, 65);
+    display: block;
+
+}
+
+h3.footer {
+    vertical-align: left;
+    width: 400px;
+    margin: 15px auto;
+    text-align: left;
+    font-weight: 800;
+    animation: 0.75s ease-out 0s 1 slideUpFooter;
+
+}
+
+p.footer{
+    animation: 0.75s ease-out 0s 1 slideUpFooter;
+    justify-content: center;
+    text-align: left;
+    vertical-align: middle;
+}
+
+footer{
+    border-top: 1px solid rgb(180, 180, 180);
+    position: static;
+    padding: 30px 0;
+    width: auto;
+    margin-top: auto;
+    animation: fadeInAnimation ease 0.75s;
+    
+}
+
+p.footer{
+    margin: 10px auto;
+    text-align: left;
+    line-height: 120%;
+    vertical-align: auto;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 7.5px;
+    transition: 0.3s;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.button:hover {
+    background-color: darkgray;
+}
+
+.introduction {
+    padding: 30px;
+    position: static;
+    text-align: left;
+    border: 0;
+    box-sizing: border-box;
+    padding-top: 130px;
+    padding-bottom: 20px;
+}
+
+.image{
+    padding: 0px;
+    position: static;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.description{
+    padding: 30px;
+    position: static;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+.about{
+    margin-top: 160px;
+}
+
+.aboutdescription{
+    padding-top: 15px;
+}
+
+
+
+.icon{
+    width: 18px;
+    float: left;
+    margin-right: 8px;
+    text-align: left;
+}
+
+
+#imageabout {
+    width:300px;
+    border-radius: 15px;
+}
+
+
+
+
